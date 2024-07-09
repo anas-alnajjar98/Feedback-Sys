@@ -122,7 +122,7 @@ namespace Feedback_Sys
                                     studentInfo[j] = studentInfo[j].Replace(currentCourseID + "-false", currentCourseID + "-true"); // Mark course as completed
                                     studentsArr[i] = string.Join(",", studentInfo);
                                     break;
-                                }
+                                }`
                             }
                             break;
                         }
