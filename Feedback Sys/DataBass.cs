@@ -69,7 +69,9 @@ namespace Feedback_Sys
         }
         override public string ToString()
         {
-            return TheCourse.Id + "-" + HasBeenReviewed;
+            if (HasBeenReviewed)             
+            return $"{TheCourse.Id}-true";
+            return $"{TheCourse.Id}-false";
         }
     }
 
@@ -157,7 +159,7 @@ namespace Feedback_Sys
             string studentCoursesString = "";
             foreach (StudentCourse studentCourse in this)
             {
-                studentCoursesString += studentCourse.TheCourse.Id + "-" + studentCourse.HasBeenReviewed + " ";
+                studentCoursesString +=studentCourse.ToString()+" " ;
             }
             return studentCoursesString.Trim();
         }

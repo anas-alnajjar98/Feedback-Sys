@@ -220,7 +220,7 @@
     </div>
 </section>
 ﻿
-11 - Ghayda'a Bdoor
+
             <!-- /Courses Section -->
         </main>
 

@@ -63,7 +63,7 @@ namespace Feedback_Sys
             headerRow.Cells.Add(new TableHeaderCell { Text = "Price" });
             headerRow.Cells.Add(new TableHeaderCell { Text = "Weeks" });
             headerRow.Cells.Add(new TableHeaderCell { Text = "Description" });
-            headerRow.Cells.Add(new TableHeaderCell { Text = "Image url" });
+            headerRow.Cells.Add(new TableHeaderCell { Text = " " });
 
 
 
@@ -77,12 +77,12 @@ namespace Feedback_Sys
                 row.Cells.Add(new TableCell { Text = course.Name });
                 row.Cells.Add(new TableCell { Text = course.Instructor });
                 row.Cells.Add(new TableCell { Text = course.Level });
-                row.Cells.Add(new TableCell { Text = course.Price.ToString() });
+                row.Cells.Add(new TableCell { Text = course.Price.ToString()+"$" });
                 row.Cells.Add(new TableCell { Text = course.DurationInWeeks.ToString() });
                 row.Cells.Add(new TableCell { Text = course.Description });
                 var tableCell = new TableCell();
                 HyperLink link = new HyperLink();
-                link.Text = "Edite Servay";
+                link.Text = "Edit Survey";
                 link.CssClass = "btn btn-primary";
                 link.NavigateUrl = $"EditCourseSurvey.aspx?course={course.Id}";
                 // Add the HyperLink to the TableCell

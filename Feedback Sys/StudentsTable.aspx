@@ -155,7 +155,7 @@
   </header>
 
    <div class="container mt-5">
-        <h1 class="centered">Table Header</h1>
+        <h1 class="centered">Student Table</h1>
         <asp:Table ID="TableOfStudents" runat="server" CssClass="table table-striped table-responsive table-hover">
         </asp:Table>
         <div class="btn-container">
