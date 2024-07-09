@@ -1,0 +1,4 @@
+QR5T3,Java,A comprehensive course on Java programming; covering fundamental and advanced topics.,Dr. Smith,4,Beginner,240,https://picsum.photos/800,true
+YJVQL,Python,A comprehensive course on Python programming; covering fundamental and advanced topics.,Dr. Smith,4,Beginner,316,https://picsum.photos/800,true
+ZCL87,CSS,A comprehensive course on CSS; covering fundamental and advanced topics.,Prof. Johnson,5,Beginner,486,https://picsum.photos/800,true
+HVU1M,JavaScript,A comprehensive course on JavaScript; covering fundamental and advanced topics.,Dr. Jones,4,Intermediate,458,https://picsum.photos/800,true

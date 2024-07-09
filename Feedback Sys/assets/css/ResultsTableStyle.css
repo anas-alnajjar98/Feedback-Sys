@@ -1,0 +1,121 @@
+﻿.container {
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow around container */
+    padding: 20px; /* Add padding inside container */
+    border-radius: 10px; /* Rounded corners */
+}
+.btn-filter, .btn-reset {
+    margin-right: 10px;
+}
+.table-bordered {
+/    border: 1px  #dee2e6;
+/
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.form-control option::before {
+    font-family: "Bootstrap Icons";
+    padding-right: 8px;
+}
+
+.form-control option[value="asc"]::before {
+    content: "\f0d8"; /* Unicode for upward arrow icon */
+}
+
+.form-control option[value="desc"]::before {
+    content: "\f0d7"; /* Unicode for downward arrow icon */
+}
+
+
+
+.table-bordered td, .table-bordered th {
+    text-align: center;
+    padding: 8px;
+}
+
+    .table-bordered tbody tr:hover {
+        background-color: #f0f0f0; /* Light grey background on row hover */
+    }
+
+#Button1, #SortButton {
+    background-color: #388da8;
+    color: #fff;
+    border-color: #388da8;
+    padding: 8px 16px; /* Add padding to buttons */
+    margin-right: 10px; /* Add margin to separate buttons */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s, border-color 0.3s; /* Smooth transition */
+}
+
+    #Button1:hover, #SortButton:hover {
+        background-color: #388da8; /* Darker shade on hover */
+        border-color: #4cb470;
+    }
+
+#Button2 {
+    background-color: #f9f9f9;
+    color: #388da8;
+    border-color: #388da8;
+    padding: 8px 16px; /* Add padding to buttons */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s, border-color 0.3s; /*Smooth transition */
+}
+
+    #Button2:hover {
+        background-color: #e5e5e5; /* Light grey shade on hover */
+        border-color: #e5e5e5;
+    }
+
+.viewFeedback {
+    background-color: #f9f9f9;
+    color: #388da8;
+    border: 1px solid #388da8;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+
+    .viewFeedback:hover {
+        background-color: #e5e5e5;
+        border-color: #9bcede;
+        color: #388da8;
+    }
+
+
+.btn-link:hover {
+    text-decoration: none;
+    color: #4cb470;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f9f9f9;
+}
+
+.form-control {
+    border-color: #5fcf80;
+    padding: 6px 12px;
+    border-radius: 5px;
+}
+
+.btn-link {
+    color: black;
+}
+
+    .btn-link:hover {
+        color: #2a6b80;
+    }
+
+.dropdown-toggle {
+    background-color: #f9f9f9;
+    color: #388da8;
+    border-color: #388da8;
+    padding: 6px 12px; /* Add padding to dropdown toggle */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s, border-color 0.3s; /*Smooth transition */
+}
+
+    .dropdown-toggle:hover {
+        background-color: #e5e5e5; /* Light grey shade on hover */
+        border-color: #2a6b80;
+    }
