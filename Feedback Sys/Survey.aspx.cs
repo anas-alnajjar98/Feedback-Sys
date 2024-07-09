@@ -12,28 +12,26 @@ namespace Feedback_Sys
     {
         string currentCourseID = null;
 
+        
+
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
             {
                 UpdateUI();
             }
-            //string currentCourseFile = Server.MapPath("~/CurrentCourse.txt");
-            string val = Request.Params["course"];
-            //string currentCourseFile = Server.MapPath("~/CurrentCourse.txt");
-            string currentCourseFile = Request.Params["course"];
-            //currentCourseID = Request.Params["student"];
+            string currentCourseFile = Server.MapPath("~/CurrentCourse.txt");
 
             if (File.Exists(currentCourseFile))
             {
-                currentCourseID = File.ReadAllText(currentCourseFile).Trim();
+                currentCourseID = Request.Params["course"];
             }
 
             string coursesQuestionsFile = Server.MapPath("~/CourseraServices.txt");
             if (File.Exists(coursesQuestionsFile))
             {
                 string[] coursesQuestionsArr = File.ReadAllLines(coursesQuestionsFile);
-                string currentCourseLine = coursesQuestionsArr.FirstOrDefault(line => line.Trim().StartsWith(currentCourseFile));
+                string currentCourseLine = coursesQuestionsArr.FirstOrDefault(line => line.Trim().StartsWith(currentCourseID));
 
                 if (currentCourseLine != null)
                 {
@@ -122,7 +120,7 @@ namespace Feedback_Sys
                                     studentInfo[j] = studentInfo[j].Replace(currentCourseID + "-false", currentCourseID + "-true"); // Mark course as completed
                                     studentsArr[i] = string.Join(",", studentInfo);
                                     break;
-                                }`
+                                }
                             }
                             break;
                         }
@@ -196,6 +194,7 @@ namespace Feedback_Sys
 
         protected void ClosePopUp_Click(object sender, EventArgs e)
         {
+            
             Response.Redirect("Feedback.aspx");
         }
         private void UpdateUI()

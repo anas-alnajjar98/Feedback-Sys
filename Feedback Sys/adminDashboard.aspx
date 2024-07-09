@@ -456,8 +456,8 @@
                             <div class="icon">
                                 <i class="fas fa-book"></i>
                             </div>
-                            <a href="">
-                                <h3>Add courses</h3>
+                            <a href="Courses.aspx">
+                                <h3>courses</h3>
                             </a>
 
                         </div>
@@ -470,7 +470,7 @@
                             <div class="icon">
                                 <i class="fas fa-comments"></i>
                             </div>
-                            <a href="">
+                            <a href="Courses.aspx">
                                 <h3>Feedback questions</h3>
                             </a>
 
@@ -484,8 +484,8 @@
                             <div class="icon">
                                 <i class="fas fa-user-graduate"></i>
                             </div>
-                            <a href="">
-                                <h3>Student Info</h3>
+                            <a href="StudentsTable.aspx">
+                                <h3>Students</h3>
                             </a>
 
 
@@ -498,7 +498,7 @@
                             <div class="icon">
                                 <i class="fas fa-poll"></i>
                             </div>
-                            <a href="">
+                            <a href="ResultsTable.aspx">
                                 <h3>Results</h3>
                             </a>
 

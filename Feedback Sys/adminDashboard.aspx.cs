@@ -86,7 +86,7 @@ namespace Feedback_Sys
                 if (sessionArray[0] == "true")
                 {
                     logInLink.Text = "Logout";
-                    logInLink.NavigateUrl = ""; /////need to clear session and redirect to home
+                    logInLink.NavigateUrl = "Logout.aspx"; /////need to clear session and redirect to home
                     welcome.Visible = true;
                     welcome.Text = $"Welcome {sessionArray[3]}";
                     if (sessionArray[1] == "true")

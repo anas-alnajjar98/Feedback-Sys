@@ -154,12 +154,16 @@
     <Content Include="assets\vendor\swiper\swiper-bundle.min.css" />
     <Content Include="assets\vendor\swiper\swiper-bundle.min.js" />
     <Content Include="Contact.aspx" />
+    <Content Include="Courses.aspx" />
+    <Content Include="EditCourseSurvey.aspx" />
+    <Content Include="EditeStudentCourses.aspx" />
     <Content Include="Feedback.aspx" />
     <Content Include="index.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="Logout.aspx" />
     <Content Include="ResultsTable.aspx" />
     <Content Include="StudentAnswers.aspx" />
+    <Content Include="StudentsTable.aspx" />
     <Content Include="Survey.aspx" />
     <Content Include="Trainers.aspx" />
     <Content Include="Web.config" />
@@ -186,7 +190,28 @@
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Courses.aspx.cs">
+      <DependentUpon>Courses.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Courses.aspx.designer.cs">
+      <DependentUpon>Courses.aspx</DependentUpon>
+    </Compile>
     <Compile Include="DataBass.cs" />
+    <Compile Include="EditCourseSurvey.aspx.cs">
+      <DependentUpon>EditCourseSurvey.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditCourseSurvey.aspx.designer.cs">
+      <DependentUpon>EditCourseSurvey.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditeStudentCourses.aspx.cs">
+      <DependentUpon>EditeStudentCourses.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditeStudentCourses.aspx.designer.cs">
+      <DependentUpon>EditeStudentCourses.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Feedback.aspx.cs">
       <DependentUpon>Feedback.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -229,6 +254,13 @@
     </Compile>
     <Compile Include="StudentAnswers.aspx.designer.cs">
       <DependentUpon>StudentAnswers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StudentsTable.aspx.cs">
+      <DependentUpon>StudentsTable.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentsTable.aspx.designer.cs">
+      <DependentUpon>StudentsTable.aspx</DependentUpon>
     </Compile>
     <Compile Include="Survey.aspx.cs">
       <DependentUpon>Survey.aspx</DependentUpon>

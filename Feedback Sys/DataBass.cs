@@ -8,7 +8,7 @@ using System.Web.Hosting;
 
 namespace Feedback_Sys
 {
-    public static class GlobalVariables
+     public static class GlobalVariables
     {
         public static string studentsFilePath = HostingEnvironment.MapPath(@"~\Students.txt");
         public static string coursesFilePath = HostingEnvironment.MapPath(@"~\Courses.txt");
